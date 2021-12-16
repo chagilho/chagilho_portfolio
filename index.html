@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>chagilho portfolio</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <header>
+        <!—/스크립트 적용 부문 시작 —>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!—/스크립트 적용 부문 끝 —>
+	
+		<nav data-aos="fade-down">
+	
+		<ul class="nav1">
+			<a href="index.html"><img src="img/logo.png" alt="logo">
+			</a>
+			<li><a onclick="fnMove('1')">HOME</a></li>	
+			<li><a onclick="fnMove('2')">ABOUT</a></li>
+			<li><a onclick="fnMove('3')">PORTFOLIO</a></li>
+            <li><a onclick="fnMove('4')">CONTACT</a></li>
+			</ul>
+		</nav>  
+	  
+	  
+	</header>
+  
+   
+	<div class="bg bg1" id="anchor1">
+      </div>
+
+      <div class="contents_01" id="anchor2">
+      <div class="about">
+          
+    <img src="img/about.png" alt="con01">
+          
+          </div>
+      
+      </div>
+
+      <div class="contents_02" id="anchor3"><span class="con02"></span>
+          
+          
+        <a href="sub_01.html"><img src="img/portfolio_11.jpg" alt="portfolio01"></a>
+          
+        <a href="sub_02.html"><img src="img/portfolio_22.jpg"
+        alt="portfolio02"></a>
+          
+        <a href="sub_03.html"><img src="img/portfolio_33.jpg"
+        alt="portfolio03"></a>
+        
+          <a href="sub_04.html"> <img src="img/portfolio_44.jpg"
+        alt="portfolio04"></a>
+        
+          
+     </div>
+      <div class="contents_03" id="anchor4"><span class="con03"></span>
+    
+          <img src="img/contact.png">
+      </div>
+       
+      
+    <footer>
+		<div class="footerwrap">
+        copyright 2021 Designer Chagilho. All Rights Reserved.
+        </div>
+        
+        <!--특정위치로 점프-->
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script>
+      function fnMove(seq){
+          var offset = $("#anchor" + seq).offset();
+          $('html, body').animate({scrollTop : offset.top},500);}
+    </script>
+    <!--특정위치로 점프-->		
+
+		</footer>
+      
+	<!—/스크립트 적용 부문 시작 —>
+      <script>
+    AOS.init({easing: 'ease-out-back',duration: 1000});
+</script>
+<!—/스크립트 적용 부문 끝 —>
+  </body>
+</html>
