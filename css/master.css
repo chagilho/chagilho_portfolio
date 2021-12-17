@@ -13,7 +13,7 @@ padding-bottom: 40px;
 
 nav{z-index: 500;
 	position: fixed;
-	width: 1020px; display: flex; justify-content: center; align-item: center;}
+	width: 100%; display: flex; justify-content: center; align-item: center;}
 .nav1{font-size: 20px;text-align: center; display: flex;
 padding-top: 50px; }
 .nav1 li{margin-left: 50px; padding-top: 25px; padding-bottom:30px;}
